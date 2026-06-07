@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vikram Aditya Pallace & Marriage Garden | Premium Wedding Venue</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Welcome to Vikram Aditya Pallace & Marriage Garden. The premier luxury wedding and event venue with AC/Non-AC rooms, a grand banquet hall, lush green gardens, and safe parking. Check booking dates live!">
+  <meta name="keywords" content="Vikram Aditya Pallace, Marriage Garden, Wedding Venue, Banquet Hall, AC Rooms, Marriage Booking Calendar">
+  <meta name="author" content="Vikram Aditya Pallace">
+
+  <!-- Google Fonts (Playfair Display for headings, Inter for body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="./style.css">
+
+  <!-- Lucide Icons for premium visual styling -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+  <!-- Premium Header & Navigation -->
+  <header class="main-header" id="header">
+    <div class="container navbar">
+      <div class="logo">
+        <a href="#" class="logo-link">
+          <span class="logo-main">VIKRAM ADITYA</span>
+          <span class="logo-sub">PALLACE & GARDEN</span>
+        </a>
+      </div>
+      <nav class="nav-menu" id="nav-menu">
+        <a href="#hero" class="nav-link active">Home</a>
+        <a href="#facilities" class="nav-link">Facilities</a>
+        <a href="#calendar-section" class="nav-link">Availability Calendar</a>
+        <a href="#contact" class="nav-link">Contact Us</a>
+      </nav>
+      <div class="nav-cta">
+        <a href="#calendar-section" class="btn btn-gold btn-navbar">Check Availability</a>
+      </div>
+      <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle Menu">
+        <i data-lucide="menu"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero Section with Slideshow Slider -->
+  <section id="hero" class="hero-section">
+    <div class="slider-container" id="hero-slider">
+      <!-- Slides will be injected by JavaScript or set as markup for SEO -->
+      <div class="slide active">
+        <div class="slide-overlay" style="background-image: linear-gradient(rgba(11, 19, 43, 0.4), rgba(11, 19, 43, 0.8)), url('./assets/hero1.png');"></div>
+        <div class="slide-content container">
+          <span class="slide-subtitle">Welcome to Luxury</span>
+          <h1 class="slide-title">Crafting Your Dream Wedding & Events</h1>
+          <p class="slide-desc">Make your special occasions memorable at Vikram Aditya Pallace. Elegant banquets, grand lawns, and royal hospitalities await you.</p>
+          <div class="slide-actions">
+            <a href="#calendar-section" class="btn btn-gold">Book Dates Online</a>
+            <a href="#facilities" class="btn btn-outline">Explore Facilities</a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="slide">
+        <div class="slide-overlay" style="background-image: linear-gradient(rgba(11, 19, 43, 0.4), rgba(11, 19, 43, 0.8)), url('./assets/hero2.png');"></div>
+        <div class="slide-content container">
+          <span class="slide-subtitle">Breathtaking Garden & Hall</span>
+          <h2 class="slide-title">Spacious Green Gardens & Grand Banquet</h2>
+          <p class="slide-desc">Perfect venue for weddings, engagements, receptions, and family celebrations with space for hundreds of guests.</p>
+          <div class="slide-actions">
+            <a href="#calendar-section" class="btn btn-gold">Book Now</a>
+            <a href="#contact" class="btn btn-outline">Contact Us</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="slide">
+        <div class="slide-overlay" style="background-image: linear-gradient(rgba(11, 19, 43, 0.4), rgba(11, 19, 43, 0.8)), url('./assets/hero3.png');"></div>
+        <div class="slide-content container">
+          <span class="slide-subtitle">Premium Comfort</span>
+          <h2 class="slide-title">Luxury AC & Non-AC Rooms Included</h2>
+          <p class="slide-desc">Host your family and close guests comfortably with 4 premium AC rooms, 5 Non-AC rooms, all with attached washrooms.</p>
+          <div class="slide-actions">
+            <a href="#calendar-section" class="btn btn-gold">Check Live Calendar</a>
+            <a href="#facilities" class="btn btn-outline">View Accommodation</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slider Controls -->
+      <button class="slide-arrow prev-arrow" id="prev-slide" aria-label="Previous Slide">
+        <i data-lucide="chevron-left"></i>
+      </button>
+      <button class="slide-arrow next-arrow" id="next-slide" aria-label="Next Slide">
+        <i data-lucide="chevron-right"></i>
+      </button>
+
+      <!-- Slider Indicators -->
+      <div class="slider-indicators" id="slider-indicators">
+        <span class="indicator active" data-slide="0"></span>
+        <span class="indicator" data-slide="1"></span>
+        <span class="indicator" data-slide="2"></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Facilities Section -->
+  <section id="facilities" class="facilities-section section-padding">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-subtitle">What We Offer</span>
+        <h2 class="section-title">World-Class Venue Facilities</h2>
+        <div class="gold-divider"></div>
+        <p class="section-description">Every detail at Vikram Aditya Pallace is designed to make your wedding, engagement, or corporate event completely seamless and luxurious.</p>
+      </div>
+
+      <div class="facilities-grid">
+        <!-- Garden Card -->
+        <div class="facility-card">
+          <div class="facility-image-wrapper">
+            <div class="facility-img" style="background-image: url('./assets/hero2.png');"></div>
+            <div class="facility-badge">Primary Venue</div>
+          </div>
+          <div class="facility-body">
+            <div class="facility-icon-wrap">
+              <i data-lucide="flower-2"></i>
+            </div>
+            <h3 class="facility-name">Lush Green Marriage Garden</h3>
+            <p class="facility-text">A massive, beautifully landscaped garden perfect for grand weddings, receptions, theme events, and outdoor seating setups. Dynamic lighting layouts supported.</p>
+          </div>
+        </div>
+
+        <!-- Banquet Hall Card -->
+        <div class="facility-card">
+          <div class="facility-image-wrapper">
+            <div class="facility-img" style="background-image: url('./assets/hall.png');"></div>
+            <div class="facility-badge">Indoor Event</div>
+          </div>
+          <div class="facility-body">
+            <div class="facility-icon-wrap">
+              <i data-lucide="castle"></i>
+            </div>
+            <h3 class="facility-name">Grand Banquet Hall</h3>
+            <p class="facility-text">A spacious air-conditioned indoor banquet hall for hosting wedding stages, sagai (engagements), birthday celebrations, and dining tables. Separate toilet washrooms attached.</p>
+          </div>
+        </div>
+
+        <!-- AC Rooms Card -->
+        <div class="facility-card">
+          <div class="facility-image-wrapper">
+            <div class="facility-img" style="background-image: url('./assets/hero3.png');"></div>
+            <div class="facility-badge">4 Rooms</div>
+          </div>
+          <div class="facility-body">
+            <div class="facility-icon-wrap">
+              <i data-lucide="snowflake"></i>
+            </div>
+            <h3 class="facility-name">Premium AC Accommodation</h3>
+            <p class="facility-text">4 luxurious, spacious AC bedrooms with attached clean modern bathrooms. Perfect for groom, bride, and immediate family members to prepare and relax.</p>
+          </div>
+        </div>
+
+        <!-- Non-AC Rooms Card -->
+        <div class="facility-card">
+          <div class="facility-image-wrapper">
+            <div class="facility-img" style="background-image: url('./assets/hero3.png');"></div>
+            <div class="facility-badge">5 Rooms</div>
+          </div>
+          <div class="facility-body">
+            <div class="facility-icon-wrap">
+              <i data-lucide="fan"></i>
+            </div>
+            <h3 class="facility-name">Standard Non-AC Rooms</h3>
+            <p class="facility-text">5 comfortable, well-ventilated Non-AC guest rooms with attached washrooms. Offers a cosy and clean stay environment for wedding guests and relatives.</p>
+          </div>
+        </div>
+
+        <!-- Parking Card -->
+        <div class="facility-card">
+          <div class="facility-image-wrapper">
+            <div class="facility-img" style="background-image: url('./assets/parking.png');"></div>
+            <div class="facility-badge">60+ Cars</div>
+          </div>
+          <div class="facility-body">
+            <div class="facility-icon-wrap">
+              <i data-lucide="car"></i>
+            </div>
+            <h3 class="facility-name">Spacious Safe Parking</h3>
+            <p class="facility-text">Dedicated, secure, and hassle-free inside parking capacity for 60+ cars, ensuring your esteemed guests do not have to worry about vehicle security.</p>
+          </div>
+        </div>
+
+        <!-- Support Card -->
+        <div class="facility-card">
+          <div class="facility-image-wrapper">
+            <div class="facility-img" style="background-image: url('./assets/support.png');"></div>
+            <div class="facility-badge">24/7 Booking</div>
+          </div>
+          <div class="facility-body">
+            <div class="facility-icon-wrap">
+              <i data-lucide="clock"></i>
+            </div>
+            <h3 class="facility-name">Flexible booking & Timings</h3>
+            <p class="facility-text">While our physical office hours are from 8:00 AM to 10:00 PM, booking services and onsite function support remain open 24 hours a day, 7 days a week.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Live Calendar Section -->
+  <section id="calendar-section" class="calendar-section section-padding">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-subtitle">Real-Time Booking Status</span>
+        <h2 class="section-title">Availability Calendar</h2>
+        <div class="gold-divider"></div>
+        <p class="section-description">Browse through the months of the year to check available slots. Select any <span class="text-success font-bold">Green (Available)</span> date to send an instant booking enquiry via WhatsApp.</p>
+      </div>
+
+      <!-- Calendar Container -->
+      <div class="calendar-widget">
+        <!-- Calendar Header Controls -->
+        <div class="calendar-header-controls">
+          <button class="btn-cal-nav" id="prev-month" aria-label="Previous Month">
+            <i data-lucide="arrow-left"></i>
+          </button>
+          <div class="current-month-display">
+            <h3 id="calendar-month-year">June 2026</h3>
+          </div>
+          <button class="btn-cal-nav" id="next-month" aria-label="Next Month">
+            <i data-lucide="arrow-right"></i>
+          </button>
+        </div>
+
+        <!-- Legend -->
+        <div class="calendar-legend">
+          <div class="legend-item">
+            <span class="legend-dot dot-available"></span>
+            <span class="legend-text">Available for Booking</span>
+          </div>
+          <div class="legend-item">
+            <span class="legend-dot dot-booked"></span>
+            <span class="legend-text">Booked / Reserved</span>
+          </div>
+        </div>
+
+        <!-- Calendar Body Grid -->
+        <div class="calendar-grid-wrapper">
+          <div class="weekdays-grid">
+            <div>Sun</div>
+            <div>Mon</div>
+            <div>Tue</div>
+            <div>Wed</div>
+            <div>Thu</div>
+            <div>Fri</div>
+            <div>Sat</div>
+          </div>
+          <div class="days-grid" id="calendar-days">
+            <!-- Days will be dynamically loaded via calendar.js -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Booking Inquiry Modal Dialog -->
+  <div class="modal-overlay" id="enquiry-modal" aria-hidden="true" role="dialog">
+    <div class="modal-content">
+      <button class="modal-close" id="close-modal" aria-label="Close Modal">
+        <i data-lucide="x"></i>
+      </button>
+      <div class="modal-header">
+        <i data-lucide="calendar-check" class="modal-gold-icon"></i>
+        <h3>Request Booking Date</h3>
+        <p>Selected Date: <span class="font-bold text-gold" id="selected-date-display">June 15, 2026</span></p>
+      </div>
+      <form class="enquiry-form" id="enquiry-form">
+        <input type="hidden" id="enquiry-date" value="">
+        
+        <div class="form-group">
+          <label for="client-name">Your Full Name <span class="required">*</span></label>
+          <div class="input-icon-wrapper">
+            <i data-lucide="user"></i>
+            <input type="text" id="client-name" name="name" placeholder="Enter your name" required>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="client-phone">Phone Number <span class="required">*</span></label>
+          <div class="input-icon-wrapper">
+            <i data-lucide="phone"></i>
+            <input type="tel" id="client-phone" name="phone" placeholder="Enter mobile number" required>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="event-type">Function/Event Type <span class="required">*</span></label>
+          <div class="input-icon-wrapper">
+            <i data-lucide="sparkles"></i>
+            <select id="event-type" name="event_type" required>
+              <option value="" disabled selected>Select function style</option>
+              <option value="Shadi (Wedding)">Shadi (Wedding Ceremony)</option>
+              <option value="Sagai (Engagement)">Sagai (Engagement Ceremony)</option>
+              <option value="Reception Party">Reception Party</option>
+              <option value="Haldi / Mehendi">Haldi / Mehendi ceremony</option>
+              <option value="Birthday Party">Birthday Party</option>
+              <option value="Other Celebrations">Other Celebration</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="special-request">Additional Requests / Guest Count</label>
+          <textarea id="special-request" name="requests" rows="3" placeholder="e.g. Approx 500 guests, need catering reference, etc."></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-gold btn-full">
+          <i data-lucide="message-square"></i> Send Enquiry on WhatsApp
+        </button>
+      </form>
+      <p class="modal-footer-info">Submitting this form redirects you to WhatsApp with pre-filled details to chat with us instantly.</p>
+    </div>
+  </div>
+
+  <!-- Contact & Location Section -->
+  <section id="contact" class="contact-section section-padding">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-subtitle">Get In Touch</span>
+        <h2 class="section-title">Contact & Location Details</h2>
+        <div class="gold-divider"></div>
+        <p class="section-description">We would love to host your next royal event. Reach out to us directly or visit our office to finalize details.</p>
+      </div>
+
+      <div class="contact-layout">
+        <!-- Contact Information Cards -->
+        <div class="contact-info">
+          <!-- Card 1: Direct Call -->
+          <a href="tel:+919752671437" class="contact-card">
+            <div class="contact-icon">
+              <i data-lucide="phone-call"></i>
+            </div>
+            <div class="contact-details">
+              <h4>Call For Booking</h4>
+              <p class="contact-value">+91 9752671437</p>
+              <p class="contact-sub">Click to call immediately</p>
+            </div>
+          </a>
+
+          <!-- Card 2: WhatsApp Chat -->
+          <a href="https://wa.me/919752671437?text=Hello%20Vikram%20Aditya%20Pallace,%20I%20am%20interested%20in%20booking%20your%20garden." target="_blank" class="contact-card">
+            <div class="contact-icon whatsapp-icon">
+              <i data-lucide="message-square"></i>
+            </div>
+            <div class="contact-details">
+              <h4>WhatsApp Chat</h4>
+              <p class="contact-value">Instant Connect</p>
+              <p class="contact-sub">Available 24/7 for booking inquiries</p>
+            </div>
+          </a>
+
+          <!-- Card 3: Location -->
+          <a href="https://maps.app.goo.gl/9FiNPXyAaGek7Zek8?g_st=aw" target="_blank" class="contact-card">
+            <div class="contact-icon">
+              <i data-lucide="map-pin"></i>
+            </div>
+            <div class="contact-details">
+              <h4>Our Location</h4>
+              <p class="contact-value">Vikram Aditya Pallace</p>
+              <p class="contact-sub">Tap here to view on Google Maps</p>
+            </div>
+          </a>
+
+          <!-- Card 4: Office Timings -->
+          <div class="contact-card disabled-link">
+            <div class="contact-icon">
+              <i data-lucide="clock-3"></i>
+            </div>
+            <div class="contact-details">
+              <h4>Office Timings</h4>
+              <p class="contact-value">8:00 AM - 10:00 PM</p>
+              <p class="contact-sub">Function setups & booking support: 24/7</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Embedded Map / Visual Card -->
+        <div class="map-card-wrapper">
+          <div class="map-container">
+            <!-- Royal looking map graphic with google maps link -->
+            <div class="map-placeholder">
+              <div class="map-pattern-bg"></div>
+              <div class="map-details-overlay">
+                <i data-lucide="map-pin" class="map-pin-pulse"></i>
+                <h3>Vikram Aditya Pallace</h3>
+                <p>Marriage Garden & Banquet Hall</p>
+                <span class="map-address-text">Katni - Jabalpur Road Area, Madhya Pradesh, India</span>
+                <a href="https://maps.app.goo.gl/9FiNPXyAaGek7Zek8?g_st=aw" target="_blank" class="btn btn-gold">
+                  <i data-lucide="navigation"></i> Open Navigation Guide
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Premium Footer -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-brand">
+        <h3 class="footer-title">VIKRAM ADITYA</h3>
+        <p class="footer-subtitle">PALLACE & MARRIAGE GARDEN</p>
+        <p class="footer-desc">Crafting magical memories since inception. Experience royal accommodation, majestic wedding banquets, and green lawns designed for a lifetime memory.</p>
+        <div class="footer-socials">
+          <a href="https://wa.me/919752671437" target="_blank" aria-label="WhatsApp"><i data-lucide="message-square"></i></a>
+          <a href="tel:+919752671437" aria-label="Phone Call"><i data-lucide="phone"></i></a>
+          <a href="https://maps.app.goo.gl/9FiNPXyAaGek7Zek8?g_st=aw" target="_blank" aria-label="Google Maps"><i data-lucide="map-pin"></i></a>
+        </div>
+      </div>
+      
+      <div class="footer-links-group">
+        <h4>Navigation Links</h4>
+        <ul class="footer-links">
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#facilities">Facilities & Accommodation</a></li>
+          <li><a href="#calendar-section">Availability Calendar</a></li>
+          <li><a href="#contact">Contact & Location</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-contact-details">
+        <h4>Venue Info</h4>
+        <ul>
+          <li>
+            <i data-lucide="map-pin"></i>
+            <span>Vikram Aditya Pallace & Garden, Near Katni/Jabalpur Highway Area</span>
+          </li>
+          <li>
+            <i data-lucide="phone"></i>
+            <span>+91 9752671437</span>
+          </li>
+          <li>
+            <i data-lucide="clock"></i>
+            <span>Office: 8:00 AM - 10:00 PM<br>Bookings: 24 Hours Active</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Vikram Aditya Pallace. All Rights Reserved. Designed with Royal Elegance.</p>
+    </div>
+  </footer>
+
+  <!-- App scripts loaded as standard script for local file system CORS-free execution -->
+  <script src="./js/app.js"></script>
+</body>
+</html>
