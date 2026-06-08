@@ -1,4 +1,4 @@
-# Vikram Aditya Pallace & Marriage Garden Web App ✦
+# Vikram Aditya Palace & Marriage Garden Web App ✦
 
 Welcome to the official web application repository for **Vikram Aditya Pallace and Marriage Garden** (Katni - Jabalpur Road Area, MP, India). 
 
